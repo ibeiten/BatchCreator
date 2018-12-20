@@ -21,8 +21,7 @@ def convert_glob_to_string(glob_list):
     string_list = [ str(x) for x in glob_list]
     return string_list
 
-
-file_type = '.txt'
-unstripped_list = files_in_folder(file_type)
-final_list = convert_glob_to_string(unstripped_list)
-print(final_list)
+def list_of_files_in_subfolder(file_type):
+    unstripped_list = files_in_folder(file_type)
+    final_list = convert_glob_to_string(unstripped_list)
+    return(final_list)
